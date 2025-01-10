@@ -41,7 +41,7 @@ class MyApp extends StatelessWidget {
                 child: Column(children: [
                   Container(
                     padding: EdgeInsets.all(15),
-                    child: Image.asset("images/2142f4c64fbeace90bb0ce1845df603b.png",
+                    child: Image.asset("images/logo.png",
                     width: 100,
                     height: 100,
                     fit: BoxFit.cover,
@@ -77,7 +77,42 @@ class MyApp extends StatelessWidget {
                       suffixIcon : Icon(Icons.lock),
  
                   ))
-                    )
+                    ),
+                  Container(
+                    
+                    padding: EdgeInsets.only(left: 15, right: 15, top: 30, bottom: 15),
+                     child: MaterialButton(onPressed: (){},
+                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
+                      minWidth: double.infinity,
+                      height: 60,                   
+                      color: Colors.green,
+                      child: Text("Login in",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold
+                      )
+
+                      ),)
+                    ),
+                  Container(
+                    
+                    padding: EdgeInsets.only(left: 15, right: 15, top: 0, bottom: 15),
+                     child: MaterialButton(onPressed: (){},
+                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
+                      minWidth: double.infinity,
+                      height: 60,                   
+                      color: Colors.green,
+                      child: Text("Register",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold
+                      )
+
+                      ),)
+                    ),
+                  
                  
 
                 ]),
